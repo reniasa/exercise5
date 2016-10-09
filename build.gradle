@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = 1.8
+
+mainClassName = "com.github.reniasa.jdbc_application.Main"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.hsqldb', name: 'hsqldb', version: '2.3.4'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.5'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.5'
+    testCompile 'junit:junit:4.12'
+}
